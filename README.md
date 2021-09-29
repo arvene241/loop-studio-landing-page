@@ -1,4 +1,4 @@
-# Frontend Mentor - Loopstudios landing page
+# Frontend Mentor - Loopstudios landing page Using Tailwind
 
 ![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)
 
