@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+      .attribution { font-size: 11px; text-align: center; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    
+    <!-- Header -->
+    <header class="h-screen bg-center bg-no-repeat bg-cover bg-fixed"
+            style="background-image: url(../images/desktop/image-hero.jpg);">
+        <div class="container">
+            <nav class="flex items-center pt-20">
+                <img src="../images/logo.svg" class="z-50" alt="">
+                <ul class="mobile-nav">
+                    <li class="link-hover link-hover2"><a href="#">About</a></li>
+                    <li class="link-hover link-hover2"><a href="#">Career</a></li>
+                    <li class="link-hover link-hover2"><a href="#">Events</a></li>
+                    <li class="link-hover link-hover2"><a href="#">Products</a></li>
+                    <li class="link-hover link-hover2"><a href="#">Support</a></li>
+                </ul>
+                <div class="flex md:hidden flex-1 justify-end z-50">
+                    <div class="menu-btn">
+                        <div class="icon1"></div>
+                    </div>
+                </div>
+            </nav>
+    
+            <!-- Hero Section -->
+            <section class="flex items-center justify-center max-w-2xl border-2 mt-48 border-loop-white border-opacity-100">
+                <h1 class="text-loop-white font-Josefin text-6xl md:text-7xl uppercase p-8 md:tracking-wider">Immersive experiences that deliver</h1>
+            </section>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section class="bg-loop-white py-20 md:py-32">
+        <div class="container flex flex-col md:flex-row items-center relative h-full w-full">
+            <img src="../images/desktop/image-interactive.jpg" alt="">
+            <div class="bg-loop-white md:absolute md:w-1/2 md:h-3/5 right-0 bottom-0 text-center md:text-left px-12 md:px-16 md:pr-8">
+                <h2 class="font-Josefin uppercase md:text-5xl text-4xl text-loop-black pt-16 pb-8">The leader in interactive VR</h2>
+                <p class="font-Alata text-loop-d-gray text-sm leading-loose md:leading-normal tracking-wide md:tracking-normal">Founded in 2011, Loopstudios has been producing world-class virtual reality 
+                    projects for some of the best companies around the globe. Our award-winning 
+                    creations have transformed businesses through digital experiences that bind 
+                    to their brand.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creations -->
+    <section class="bg-loop-white py-20 md:py-32">
+        <div class="container relative pb-20">
+            <div class="block md:flex items-center justify-between">
+                <h2 class="font-Josefin uppercase text-5xl text-loop-black text-center">Our Creations</h2>
+                <button class="hidden md:flex font-Alata text-sm tracking-widest uppercase px-12 py-3 border-loop-black border-2 border-opacity-100 hover:bg-loop-black hover:text-loop-white">See All</button>
+            </div>
+            <div class="pt-16 flex flex-wrap gap-8 items-center justify-center">
+                <div class="flex-items-wrap bg-1 bg-blur"
+                    style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-deep-earth.jpg);">
+                    <h2 class="font-Josefin uppercase text-loop-white pl-12 pb-8 text-4xl">Deep earth</h2>
+                </div>
+                <div class="flex-items-wrap bg-2 bg-blur"
+                    style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-night-arcade.jpg);">
+                    <h2 class="font-Josefin uppercase text-loop-white pl-12 pb-8 text-4xl">Night Arcade</h2>
+                </div> 
+                <div class="flex-items-wrap bg-3 bg-blur"
+                    style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-soccer-team.jpg);">
+                    <h2 class="font-Josefin uppercase text-loop-white pl-12 pb-8 text-4xl">Soccer team vr</h2>
+                </div>
+                <div class="flex-items-wrap bg-4 bg-blur"
+                    style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-grid.jpg);">
+                    <h2 class="font-Josefin uppercase text-loop-white pl-12 pb-8 text-4xl">The Grid</h2>
+                </div>
+                <div class="flex-items-wrap bg-5 bg-blur"
+                    style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-from-above.jpg);">
+                    <h2 class="font-Josefin uppercase text-loop-white pl-12 pb-8 text-4xl">From up above vr</h2>
+                </div>
+                <div class="flex-items-wrap bg-6 bg-blur"
+                    style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-pocket-borealis.jpg);">
+                    <h2 class="font-Josefin uppercase text-loop-white pl-12 pb-8 text-4xl">Rocket Boreals</h2>
+                </div>
+                <div class="flex-items-wrap bg-7 bg-blur"
+                    style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-curiosity.jpg);">
+                    <h2 class="font-Josefin uppercase text-loop-white pl-12 pb-8 text-4xl">The Curiosity</h2>
+                </div>
+                <div class="flex-items-wrap bg-8 bg-blur"
+                    style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-fisheye.jpg);">
+                    <h2 class="font-Josefin uppercase text-loop-white pl-12 pb-8 text-4xl">Make it fish eye</h2>
+                </div>
+                <button class="absolute bottom-0 md:hidden font-Alata text-sm tracking-widest uppercase px-12 py-3 border-loop-black border-2 border-opacity-100 hover:bg-loop-black hover:text-loop-white">See All</button>
+            </div> 
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-loop-black py-10 md:py-12">
+        <div class="container">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div>
+                    <img src="../images/logo.svg" alt="">
+                    <ul class="flex flex-col md:flex-row items-center md:gap-10 gap-6 md:pt-6 pt-10">
+                        <li class="link-hover">About</li>
+                        <li class="link-hover">Career</li>
+                        <li class="link-hover">Events</li>
+                        <li class="link-hover">Products</li>
+                        <li class="link-hover">Support</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col md:block gap-6">
+                    <div class="flex md:justify-end justify-center gap-6 md:pb-6 pb-0 md:pt-0 pt-12">
+                        <img class="link-hover" src="../images/icon-facebook.svg" alt="">
+                        <img class="link-hover" src="../images/icon-twitter.svg" alt="">
+                        <img class="link-hover" src="../images/icon-pinterest.svg" alt="">
+                        <img class="link-hover" src="../images/icon-instagram.svg" alt="">
+                    </div>
+                    <div>
+                        <p class="font-Alata text-loop-d-gray text-sm">© 2021 Loopstudios. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="attribution font-Josefin text-loop-white pt-10">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="hover:text-loop-d-gray" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="#" class="hover:text-loop-d-gray">Mike Arvene Lantin</a>.
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

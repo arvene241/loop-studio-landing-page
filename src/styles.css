@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (min-width: 768px) { 
+    .flex-items-wrap { 
+        @apply bg-cover bg-no-repeat bg-center flex items-end !important;
+        width: calc(25% - 1.5rem) !important;
+        height: 500px !important; 
+    }
+
+    .bg-1 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-deep-earth.jpg) !important;
+    }
+
+    .bg-2 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-night-arcade.jpg) !important;
+    }
+
+    .bg-3 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-soccer-team.jpg) !important;
+    }
+
+    .bg-4 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-grid.jpg) !important;
+    }
+
+    .bg-5 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-from-above.jpg) !important;
+    }
+
+    .bg-6 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-pocket-borealis.jpg) !important;
+    }
+
+    .bg-7 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-curiosity.jpg) !important;
+    }
+
+    .bg-8 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-fisheye.jpg) !important;
+    }
+
+    .mobile-nav {
+        @apply top-0 left-0 bg-transparent flex flex-1 justify-end items-center gap-10;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-nav {
+        @apply h-full w-full fixed z-30 -top-full left-0 bg-loop-black overflow-x-hidden flex flex-col items-start justify-center pl-8 uppercase gap-5;
+        transition: .5s;
+    }
+
+    .link-hover2 {
+        @apply font-Josefin text-2xl !important;
+    }
+}
+
+.flex-items-wrap {
+    @apply bg-cover bg-no-repeat bg-center flex items-end w-full cursor-pointer;
+    height: 200px;
+}
+
+/* .bg-blur {
+    transition: .5s ease-in-out;
+}
+
+.flex-items-wrap:hover.bg-blur::before {
+    content: "";
+    @apply absolute w-full h-full;
+    backdrop-filter: blur(2px);
+    animation: blur .3s ease-in forwards;
+}
+
+@keyframes blur {
+    from {
+      opacity: .3;
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+    to {
+      opacity: .8;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+} */
+
+.flex-items-wrap:hover h2 {
+    @apply text-loop-black;
+}
+
+.link-hover {
+    @apply text-loop-white font-Alata cursor-pointer text-sm relative;
+}
+
+.link-hover::before {
+    content: "";
+    @apply absolute w-full bg-loop-white -bottom-2 rounded;
+    height: 3px;
+    transition: .25s linear;
+    transform: scaleX(0);
+}
+
+.link-hover:hover::before,
+.link-hover:focus::before {
+    transform: scaleX(1);
+}
+
+.mobile-nav.active {
+    @apply top-0;
+}
+
+.menu-btn {
+    @apply w-7 h-7 cursor-pointer;
+}
+
+.icon1 {
+    background: url(../images/icon-hamburger.svg) no-repeat;
+    @apply bg-center bg-cover w-full h-full;
+    transition: .35s ease-in-out;
+}
+
+.icon2 {
+    background: url(../images/icon-close.svg) no-repeat;
+    @apply bg-center bg-cover w-full h-full;
+    transition: .35s ease-in-out;
+}
