@@ -32941,46 +32941,45 @@ video {
 }
 
 @media (min-width: 768px) {
-  .flex-items-wrap {
+  .grid-items {
     display: flex !important;
     align-items: flex-end !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    width: calc(25% - 1.5rem) !important;
     height: 500px !important;
   }
 
   .bg-1 {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-deep-earth.jpg) !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-deep-earth.jpg);
   }
 
   .bg-2 {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-night-arcade.jpg) !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-night-arcade.jpg);
   }
 
   .bg-3 {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-soccer-team.jpg) !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-soccer-team.jpg);
   }
 
   .bg-4 {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-grid.jpg) !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-grid.jpg);
   }
 
   .bg-5 {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-from-above.jpg) !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-from-above.jpg);
   }
 
   .bg-6 {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-pocket-borealis.jpg) !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-pocket-borealis.jpg);
   }
 
   .bg-7 {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-curiosity.jpg) !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-curiosity.jpg);
   }
 
   .bg-8 {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-fisheye.jpg) !important;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/desktop/image-fisheye.jpg);
   }
 
   .mobile-nav {
@@ -32996,6 +32995,38 @@ video {
 }
 
 @media (max-width: 768px) {
+  .bg-1 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-deep-earth.jpg);
+  }
+
+  .bg-2 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-night-arcade.jpg);
+  }
+
+  .bg-3 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-soccer-team.jpg);
+  }
+
+  .bg-4 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-grid.jpg);
+  }
+
+  .bg-5 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-from-above.jpg);
+  }
+
+  .bg-6 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-pocket-borealis.jpg);
+  }
+
+  .bg-7 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-curiosity.jpg);
+  }
+
+  .bg-8 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-fisheye.jpg);
+  }
+
   .mobile-nav {
     position: fixed;
     top: -100%;
@@ -33023,7 +33054,21 @@ video {
   }
 }
 
-.flex-items-wrap {
+.bg-blur {
+  position: relative;
+}
+
+.bg-blur:hover::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.grid-items {
   display: flex;
   width: 100%;
   cursor: pointer;
@@ -33045,20 +33090,23 @@ video {
     animation: blur .3s ease-in forwards;
 }
 
-@keyframes blur {
+*/
+
+/* @keyframes blur {
     from {
       opacity: .3;
       background-color: rgba(255, 255, 255, 0.6);
     }
     to {
-      opacity: .8;
+      opacity: .5;
       background-color: rgba(255, 255, 255, 0.2);
     }
-} */
+}  */
 
-.flex-items-wrap:hover h2 {
+.grid-items:hover h2 {
   --tw-text-opacity: 1;
   color: hsla(0, 0%, 0%, var(--tw-text-opacity));
+  opacity: 1 !important;
 }
 
 .link-hover {
