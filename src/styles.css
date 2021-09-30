@@ -4,9 +4,8 @@
 
 
 @media (min-width: 768px) { 
-    .flex-items-wrap { 
+    .grid-items { 
         @apply bg-cover bg-no-repeat bg-center flex items-end !important;
-        width: calc(25% - 1.5rem) !important;
         height: 500px !important; 
     }
 
@@ -48,6 +47,38 @@
 }
 
 @media (max-width: 768px) {
+    .bg-1 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-deep-earth.jpg) !important;
+    }
+
+    .bg-2 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-night-arcade.jpg) !important;
+    }
+
+    .bg-3 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-soccer-team.jpg) !important;
+    }
+
+    .bg-4 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-grid.jpg) !important;
+    }
+
+    .bg-5 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-from-above.jpg) !important;
+    }
+
+    .bg-6 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-pocket-borealis.jpg) !important;
+    }
+
+    .bg-7 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-curiosity.jpg) !important;
+    }
+
+    .bg-8 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/mobile/image-fisheye.jpg) !important;
+    }
+
     .mobile-nav {
         @apply h-full w-full fixed z-30 -top-full left-0 bg-loop-black overflow-x-hidden flex flex-col items-start justify-center pl-8 uppercase gap-5;
         transition: .5s;
@@ -58,7 +89,7 @@
     }
 }
 
-.flex-items-wrap {
+.grid-items {
     @apply bg-cover bg-no-repeat bg-center flex items-end w-full cursor-pointer;
     height: 200px;
 }
