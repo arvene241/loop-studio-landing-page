@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @media (min-width: 768px) { 
     .grid-items { 
         @apply bg-cover bg-no-repeat bg-center flex items-end !important;
