@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "![Design preview for the Loopstudios landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
-  "scripts": {
-    "build-css": "tailwindcss -i src/styles.css -o public/styles.css"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",

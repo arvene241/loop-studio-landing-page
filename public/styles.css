@@ -33079,30 +33079,6 @@ video {
   height: 200px;
 }
 
-/* .bg-blur {
-    transition: .5s ease-in-out;
-}
-
-.flex-items-wrap:hover.bg-blur::before {
-    content: "";
-    @apply absolute w-full h-full;
-    backdrop-filter: blur(2px);
-    animation: blur .3s ease-in forwards;
-}
-
-*/
-
-/* @keyframes blur {
-    from {
-      opacity: .3;
-      background-color: rgba(255, 255, 255, 0.6);
-    }
-    to {
-      opacity: .5;
-      background-color: rgba(255, 255, 255, 0.2);
-    }
-}  */
-
 .grid-items:hover h2 {
   --tw-text-opacity: 1;
   color: hsla(0, 0%, 0%, var(--tw-text-opacity));
